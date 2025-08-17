@@ -1,0 +1,126 @@
+/* Container */
+.projects-container {
+  min-height: 100vh;
+  padding: 7rem 1.5rem 3rem 1.5rem;
+  background-color: #111827; /* gray-900 */
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Heading */
+.projects-heading {
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .projects-heading {
+    font-size: 3rem;
+  }
+}
+
+/* Grid */
+.projects-grid {
+  display: grid;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Project Card */
+.project-card {
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 1.5rem;
+  backdrop-filter: blur(12px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+}
+
+.project-card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.project-period {
+  color: #facc15;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Links Container */
+.project-links {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+/* GitHub & Live Demo Links */
+.project-link {
+  padding: 0.5rem 1rem;
+  background-color: #facc15; /* yellow */
+  color: #000;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.project-link:hover {
+  background-color: #fde047;
+  transform: scale(1.05);
+}
+
+/* Live Demo Button */
+.live-link {
+  background-color: #10b981; /* green */
+  color: #fff;
+}
+
+.live-link:hover {
+  background-color: #34d399;
+  transform: scale(1.05);
+}
+
+/* Responsive adjustments for buttons */
+@media (max-width: 480px) {
+  .project-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .project-link {
+    width: 100%;
+    text-align: center;
+  }
+}
