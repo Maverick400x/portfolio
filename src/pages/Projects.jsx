@@ -7,10 +7,12 @@ export default function Projects() {
         {
             title: "Flash Connect",
             period: "Jul 2025 - Present",
-            desc: "FlashConnect is a social networking application designed to enable users to connect with other professionals, manage their connections, and communicate through messages. This document outlines the core functionalities from the perspective of an end-user, ensuring an intuitive and engaging experience.",
+            desc: "FlashConnect is a social networking application designed to enable users to connect with other professionals, manage their connections, and communicate through messages.",
             github: "",
             live: "",
             ongoing: true,
+            lagging: "message distribution",
+            tags: ["Frontend", "Backend", "Social Networking"],
         },
         {
             title: "Book Nest",
@@ -19,7 +21,8 @@ export default function Projects() {
             github: "https://github.com/Maverick400x/BookNest",
             live: "https://book-nest-wgrp.onrender.com",
             ongoing: true,
-            lagging: "Payment Gateway",
+            lagging: "Payment Gateway - razorpay",
+            tags: ["Fullstack", "MongoDB", "Node.js", "E-commerce"],
         },
         {
             title: "Github User Finder",
@@ -27,6 +30,7 @@ export default function Projects() {
             desc: "Web app to search GitHub profiles and view avatar, bio, followers, following, and repositories. Built with JavaScript and GitHub API.",
             github: "https://github.com/Maverick400x/Github-user-id-finder",
             live: "https://maverick400x.github.io/Github-user-id-finder/",
+            tags: ["Frontend", "API Integration"],
         },
         {
             title: "Weather Application",
@@ -34,6 +38,7 @@ export default function Projects() {
             desc: "Weather forecast app using OpenWeather API with real-time updates. Built with JavaScript & API integration.",
             github: "https://github.com/Maverick400x/Weather-Application",
             live: "https://weather-application-three-liard.vercel.app/",
+            tags: ["Frontend", "API Integration"],
         },
         {
             title: "Reinforcement learning-based hyperspectral image classification",
@@ -42,6 +47,7 @@ export default function Projects() {
             github: "https://github.com/MAVERICK400x/Reinforcement-learning-based-Hyperspectral-Image-Classification-using-binary-entropy-method",
             live: "",
             document: "https://www.ijfmr.com/papers/2024/2/18303.pdf",
+            tags: ["Machine Learning", "Python", "TensorFlow"],
         },
         {
             title: "Discord Music Bot (Therapy)",
@@ -49,6 +55,7 @@ export default function Projects() {
             desc: "Music bot integrated with Discord API & YouTube API for therapeutic music streaming in servers. Built with React.js, Node.js, and Discord.js.",
             github: "https://github.com/Maverick400x",
             live: "",
+            tags: ["Backend", "Discord.js", "API Integration"],
         },
     ];
 
@@ -77,17 +84,31 @@ export default function Projects() {
                                 whileHover={{ scale: 1.05 }}
                                 className="project-card"
                             >
-                                <span className="project-ongoing">Ongoing</span>
-                                {p.lagging && (
-                                    <span className="project-lagging">
-                    What's Lagging: {p.lagging}
-                  </span>
-                                )}
+                                <div className="project-badges">
+                                    <span className="project-ongoing">Ongoing</span>
+                                    {p.lagging && (
+                                        <span className="project-lagging">
+                                            Working : {p.lagging}
+                                        </span>
+                                    )}
+                                </div>
                                 <div>
                                     <h3>{p.title}</h3>
                                     <p className="project-period">{p.period}</p>
                                     <p>{p.desc}</p>
                                 </div>
+
+                                {/* Tags */}
+                                {p.tags && (
+                                    <div className="project-tags">
+                                        {p.tags.map((tag, idx) => (
+                                            <span key={idx} className="project-tag">
+                                                {tag}
+                                            </span>
+                                        ))}
+                                    </div>
+                                )}
+
                                 <div className="project-links">
                                     {p.github && (
                                         <a
@@ -132,6 +153,18 @@ export default function Projects() {
                                     <p className="project-period">{p.period}</p>
                                     <p>{p.desc}</p>
                                 </div>
+
+                                {/* Tags */}
+                                {p.tags && (
+                                    <div className="project-tags">
+                                        {p.tags.map((tag, idx) => (
+                                            <span key={idx} className="project-tag">
+                                                {tag}
+                                            </span>
+                                        ))}
+                                    </div>
+                                )}
+
                                 <div className="project-links">
                                     {p.github && (
                                         <a
