@@ -173,3 +173,19 @@
     text-align: center;
     color: #facc15; /* yellow highlight */
 }
+
+.project-tags {
+    margin-top: 0.8rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.project-tag {
+    background: #1e293b; /* dark slate */
+    color: #facc15; /* yellow */
+    padding: 0.3rem 0.7rem;
+    border-radius: 9999px; /* pill shape */
+    font-size: 0.8rem;
+    font-weight: 500;
+}
