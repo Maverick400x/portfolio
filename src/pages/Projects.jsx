@@ -13,6 +13,9 @@ export default function Projects() {
             ongoing: true,
             lagging: "message distribution",
             tags: ["Frontend", "Backend", "Social Networking"],
+            phases: [
+                { name: "Phase 2: Messaging System", eta: "Aug 2025", completed: false },
+            ],
         },
         {
             title: "Book Nest",
@@ -23,6 +26,10 @@ export default function Projects() {
             ongoing: true,
             lagging: "Payment Gateway - razorpay",
             tags: ["Fullstack", "MongoDB", "Node.js", "E-commerce"],
+            phases: [
+                { name: "Phase 1: Core Store Features", eta: "Jul 2025", completed: true },
+                { name: "Phase 2: Payment Integration", eta: "Sep 2025", completed: false },
+            ],
         },
         {
             title: "Github User Finder",
@@ -88,7 +95,7 @@ export default function Projects() {
                                     <span className="project-ongoing">Ongoing</span>
                                     {p.lagging && (
                                         <span className="project-lagging">
-                                            Working : {p.lagging}
+                                            Working: {p.lagging}
                                         </span>
                                     )}
                                 </div>
@@ -105,6 +112,24 @@ export default function Projects() {
                                             <span key={idx} className="project-tag">
                                                 {tag}
                                             </span>
+                                        ))}
+                                    </div>
+                                )}
+
+                                {/* Phases */}
+                                {p.phases && (
+                                    <div className="project-phase">
+                                        {p.phases.map((phase, idx) => (
+                                            <div
+                                                key={idx}
+                                                className={`phase-step ${
+                                                    phase.completed
+                                                        ? "phase-completed"
+                                                        : "phase-pending"
+                                                }`}
+                                            >
+                                                {phase.name} — {phase.eta}
+                                            </div>
                                         ))}
                                     </div>
                                 )}

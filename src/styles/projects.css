@@ -189,3 +189,37 @@
     font-size: 0.8rem;
     font-weight: 500;
 }
+
+/* Phase / Estimated Completion */
+.project-phase {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-top: 0.8rem;
+}
+
+.phase-step {
+    background-color: rgba(250, 204, 21, 0.1); /* faint yellow */
+    border-left: 4px solid #facc15; /* yellow accent */
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+    font-size: 0.85rem;
+    color: #e5e7eb; /* text-gray-200 */
+    font-weight: 500;
+    transition: transform 0.2s ease;
+}
+
+.phase-step:hover {
+    transform: translateX(5px);
+}
+
+.phase-completed {
+    border-left: 4px solid #10b981; /* green for completed */
+    background-color: rgba(16, 185, 129, 0.1);
+    color: #d1fae5; /* green-100 */
+    text-decoration: line-through;
+}
+
+.phase-pending {
+    opacity: 0.7;
+}
