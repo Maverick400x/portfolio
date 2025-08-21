@@ -113,3 +113,20 @@
 .social-icons a:nth-child(3) {
   color: #0e76a8; /* LinkedIn blue */
 }
+
+.contact-subtext {
+    font-size: 1rem;
+    color: #e5e5e5;
+    margin: 1rem auto 1.5rem auto;
+    max-width: 600px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.contact-footer {
+    font-size: 0.9rem;
+    color: #cbd5e1;
+    margin-top: 2rem;
+    text-align: center;
+    font-style: italic;
+}

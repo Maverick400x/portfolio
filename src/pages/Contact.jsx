@@ -16,6 +16,18 @@ export default function Contact() {
                 Get in Touch
             </motion.h2>
 
+            {/* Subtext */}
+            <motion.p
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.3, duration: 0.8 }}
+                className="contact-subtext"
+            >
+                I’d love to connect! Whether it’s about a project, collaboration,
+                or just to say hi — feel free to reach out through any of the
+                platforms below.
+            </motion.p>
+
             {/* Social Links */}
             <motion.div
                 initial={{ opacity: 0 }}
@@ -37,6 +49,16 @@ export default function Contact() {
                     <FaLinkedin size={26} />
                 </a>
             </motion.div>
+
+            {/* Footer Note */}
+            <motion.p
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.7, duration: 0.8 }}
+                className="contact-footer"
+            >
+                ✨ Let’s build something amazing together!
+            </motion.p>
         </div>
     );
 }
