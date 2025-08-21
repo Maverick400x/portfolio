@@ -152,3 +152,24 @@
   font-size: 0.8rem;
   margin-bottom: 0.75rem;
 }
+
+/* Lagging Label */
+.project-lagging {
+    display: inline-block;
+    background-color: #f87171; /* red-400 */
+    color: #fff;
+    font-weight: 600;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.5rem;
+    font-size: 0.8rem;
+    margin-bottom: 0.75rem;
+    margin-left: 0.5rem; /* spacing next to ongoing badge */
+}
+
+.projects-subheading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 2rem 0 1rem;
+    text-align: center;
+    color: #facc15; /* yellow highlight */
+}
