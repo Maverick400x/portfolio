@@ -12,7 +12,7 @@ export default function Projects() {
             live: "",
             ongoing: true,
             lagging: "message distribution",
-            tags: ["Frontend", "Backend ", "Social Networking"],
+            tags: ["Frontend", "Backend", "Social Networking"],
             phases: [
                 { name: "Phase 2: Messaging System", eta: "Aug 2025", completed: false },
             ],
