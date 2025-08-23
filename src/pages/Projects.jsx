@@ -12,9 +12,23 @@ export default function Projects() {
             live: "",
             ongoing: true,
             lagging: "message distribution",
-            tags: ["Frontend", "Backend ", "Social Networking"],
+            tags: ["Frontend", "Backend", "Social Networking"],
             phases: [
-                { name: "Phase 2: Messaging System", eta: "Aug 2025", completed: false },
+                {
+                    name: "Phase 1: Landing page, login, register, and reset password",
+                    eta: "July 2025",
+                    completed: true,
+                },
+                {
+                    name: "Phase 2: Dashboard",
+                    eta: "Aug 2025",
+                    completed: true,
+                },
+                {
+                    name: "Phase 3: Message",
+                    eta: "Aug 2025",
+                    completed: false,
+                },
             ],
         },
         {
@@ -27,8 +41,22 @@ export default function Projects() {
             lagging: "Payment Gateway - razorpay",
             tags: ["Fullstack", "MongoDB", "Node.js", "E-commerce"],
             phases: [
-                { name: "Phase 1: Core Store Features", eta: "Jul 2025", completed: true },
-                { name: "Phase 2: Payment Integration", eta: "Sep 2025", completed: false },
+                { name: "Phase 1: Core Store Features", eta: "May 2025", completed: true },
+                {
+                    name: "Phase 2: Authenticated login and register via OTP",
+                    eta: "June 2025",
+                    completed: true,
+                },
+                {
+                    name: "Phase 3: View product feature",
+                    eta: "July 2025",
+                    completed: true,
+                },
+                {
+                    name: "Phase 4: Payment Integration",
+                    eta: "Sep 2025",
+                    completed: false,
+                },
             ],
         },
         {
@@ -128,7 +156,7 @@ export default function Projects() {
                                                         : "phase-pending"
                                                 }`}
                                             >
-                                                {phase.name} — {phase.eta}
+                                                {phase.completed ? "✅" : "⏳"} {phase.name} — {phase.eta}
                                             </div>
                                         ))}
                                     </div>
