@@ -55,7 +55,7 @@ export default function Projects() {
                 {
                     name: "Phase 4: Payment Integration",
                     eta: "Sep 2025",
-                    completed: false,
+                    completed: true,
                 },
             ],
         },
