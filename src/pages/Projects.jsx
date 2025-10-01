@@ -33,12 +33,12 @@ export default function Projects() {
         },
         {
             title: "Book Nest",
-            period: "March 2025 – Present",
+            period: "March 2025 – Sept 2025",
             desc: "Full-featured online bookstore with authentication, search, shopping cart, and REST APIs using Node.js, Express.js, and MongoDB. Deployed on Render.",
             github: "https://github.com/Maverick400x/BookNest",
             live: "https://book-nest-wgrp.onrender.com",
-            ongoing: true,
-            tags: ["Fullstack", "MongoDB", "Node.js", "E-commerce"],
+            ongoing: false,
+            tags: ["Fullstack", "MongoDB", "Node.js", "E-commerce","Razorpay"],
             phases: [
                 { name: "Phase 1: Core Store Features", eta: "May 2025", completed: true },
                 {
