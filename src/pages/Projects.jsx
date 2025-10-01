@@ -38,7 +38,6 @@ export default function Projects() {
             github: "https://github.com/Maverick400x/BookNest",
             live: "https://book-nest-wgrp.onrender.com",
             ongoing: true,
-            lagging: "Payment Gateway - razorpay",
             tags: ["Fullstack", "MongoDB", "Node.js", "E-commerce"],
             phases: [
                 { name: "Phase 1: Core Store Features", eta: "May 2025", completed: true },
