@@ -235,7 +235,7 @@ export default function Projects() {
                                             rel="noreferrer"
                                             className="project-link live-link"
                                         >
-                                            Live Demo
+                                            Live
                                         </a>
                                     )}
                                     {p.document && (
