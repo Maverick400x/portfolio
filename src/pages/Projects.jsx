@@ -5,33 +5,6 @@ import "../styles/projects.css"; // Import the CSS
 export default function Projects() {
     const projects = [
         {
-            title: "Flash Connect",
-            period: "Jul 2025 - Present",
-            desc: "FlashConnect is a social networking application designed to enable users to connect with other professionals, manage their connections, and communicate through messages.",
-            github: "",
-            live: "",
-            ongoing: true,
-            lagging: "message distribution",
-            tags: ["Frontend", "Backend", "Social Networking"],
-            phases: [
-                {
-                    name: "Phase 1: Landing page, login, register, and reset password",
-                    eta: "July 2025",
-                    completed: true,
-                },
-                {
-                    name: "Phase 2: Dashboard",
-                    eta: "Aug 2025",
-                    completed: true,
-                },
-                {
-                    name: "Phase 3: Message",
-                    eta: "Aug 2025",
-                    completed: false,
-                },
-            ],
-        },
-        {
             title: "Book Nest",
             period: "March 2025 – Sept 2025",
             desc: "Full-featured online bookstore with authentication, search, shopping cart, and REST APIs using Node.js, Express.js, and MongoDB. Deployed on Render.",
