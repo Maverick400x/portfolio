@@ -174,3 +174,126 @@
   background-color: #e5e7eb;
   transform: scale(1.05);
 }
+
+/* ============================= */
+/* 🎓 Education Section Styles   */
+/* ============================= */
+
+.education-section {
+  margin-top: 3rem;
+  text-align: center;
+  width: 100%;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  letter-spacing: 0.03em;
+  color: #facc15; /* yellow highlight */
+}
+
+/* Education Cards Container */
+.education-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Each Education Card */
+.education-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+  border-radius: 1.25rem;
+  padding: 1.5rem;
+  width: 320px;
+  text-align: left;
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.education-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Floating Glow Effect */
+.education-card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle,
+    rgba(250, 204, 21, 0.15) 0%,
+    transparent 60%
+  );
+  transform: translateY(0);
+  animation: float-glow 6s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+
+@keyframes float-glow {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-20px);
+  }
+}
+
+/* Icon */
+.edu-icon {
+  color: #facc15;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+  animation: float-icon 3s ease-in-out infinite;
+}
+
+@keyframes float-icon {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0); }
+}
+
+/* Text Content */
+.edu-content h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: #fff;
+}
+
+.edu-content p {
+  font-size: 0.95rem;
+  opacity: 0.9;
+  margin-bottom: 0.3rem;
+}
+
+.edu-content span {
+  font-size: 0.85rem;
+  opacity: 0.75;
+  display: block;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 640px) {
+  .education-card {
+    width: 90%;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+}
