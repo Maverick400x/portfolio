@@ -16,7 +16,7 @@ export default function IntroPage() {
     {
       icon: <FaGraduationCap size={28} />,
       degree: "B.Tech in Computer Science Engineering",
-      college: "Institute of Aeronautical Engineering",
+      college: "Institute of Aeronautical Engineering, Hyderabad",
       duration: "2020 – 2024",
     },
   ];
