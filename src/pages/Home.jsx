@@ -39,9 +39,21 @@ export default function IntroPage() {
         />
 
         <h1 className="home-heading">B. Srinivasa Ranganath</h1>
+
+        {/* Education Details */}
+        <p className="home-subtext">
+          VNR Vignana Jyothi Institute of Engineering & Technology, Hyderabad
+        </p>
+        <p className="home-subtext">
+          M.Tech in Computer Networks and Information Security (Nov 2025 – Present)
+        </p>
+
         <p className="home-subtext">Institute of Aeronautical Engineering</p>
-        <p className="home-subtext">B.Tech, Computer Science Engineering (2020 - 2024)</p>
-        <p className="home-role">Frontend & Full Stack Developer</p>
+        <p className="home-subtext">
+          B.Tech, Computer Science Engineering (2020 – 2024)
+        </p>
+
+        <p className="home-role">Full Stack Developer</p>
       </motion.div>
 
       {/* Social Links */}
