@@ -1,11 +1,26 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaGraduationCap } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import "../styles/home.css";
-import ProfilePic from "../assets/profile.svg"; // Import the SVG
+import ProfilePic from "../assets/profile.svg";
 
 export default function IntroPage() {
+  const education = [
+    {
+      icon: <FaGraduationCap size={28} />,
+      degree: "M.Tech in Computer Networks and Information Security",
+      college: "VNR Vignana Jyothi Institute of Engineering & Technology, Hyderabad",
+      duration: "Nov 2025 – Present",
+    },
+    {
+      icon: <FaGraduationCap size={28} />,
+      degree: "B.Tech in Computer Science Engineering",
+      college: "Institute of Aeronautical Engineering",
+      duration: "2020 – 2024",
+    },
+  ];
+
   const cards = [
     {
       title: "Experience",
@@ -23,7 +38,6 @@ export default function IntroPage() {
 
   return (
     <div className="home-container">
-
       {/* Intro Section */}
       <motion.div
         initial={{ opacity: 0, y: -40 }}
@@ -31,29 +45,46 @@ export default function IntroPage() {
         transition={{ duration: 1 }}
         className="text-center"
       >
-        {/* Profile Picture */}
-        <img
-          src={ProfilePic}
-          alt="Profile"
-          className="profile-pic"
-        />
+        <img src={ProfilePic} alt="Profile" className="profile-pic" />
 
         <h1 className="home-heading">B. Srinivasa Ranganath</h1>
-
-        {/* Education Details */}
-        <p className="home-subtext">
-          VNR Vignana Jyothi Institute of Engineering & Technology, Hyderabad
-        </p>
-        <p className="home-subtext">
-          M.Tech in Computer Networks and Information Security (Nov 2025 – Present)
-        </p>
-
-        <p className="home-subtext">Institute of Aeronautical Engineering</p>
-        <p className="home-subtext">
-          B.Tech, Computer Science Engineering (2020 – 2024)
-        </p>
-
         <p className="home-role">Full Stack Developer</p>
+      </motion.div>
+
+      {/* Education Cards Section */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.5 }}
+        className="education-section"
+      >
+        <h2 className="section-title">Education</h2>
+
+        <div className="education-cards">
+          {education.map((edu, idx) => (
+            <motion.div
+              key={idx}
+              className="education-card"
+              whileHover={{ scale: 1.05, y: -5 }}
+              animate={{
+                y: [0, -6, 0],
+              }}
+              transition={{
+                duration: 3,
+                repeat: Infinity,
+                repeatType: "mirror",
+                delay: idx * 0.3,
+              }}
+            >
+              <div className="edu-icon">{edu.icon}</div>
+              <div className="edu-content">
+                <h3>{edu.degree}</h3>
+                <p>{edu.college}</p>
+                <span>{edu.duration}</span>
+              </div>
+            </motion.div>
+          ))}
+        </div>
       </motion.div>
 
       {/* Social Links */}
@@ -63,11 +94,7 @@ export default function IntroPage() {
         transition={{ delay: 0.4 }}
         className="social-icons"
       >
-        <a
-          href="https://github.com/Maverick400x"
-          target="_blank"
-          rel="noreferrer"
-        >
+        <a href="https://github.com/Maverick400x" target="_blank" rel="noreferrer">
           <FaGithub size={28} />
         </a>
         <a
@@ -77,11 +104,7 @@ export default function IntroPage() {
         >
           <FaLinkedin size={28} />
         </a>
-        <a
-          href="https://leetcode.com/u/uInn4XILyH/"
-          target="_blank"
-          rel="noreferrer"
-        >
+        <a href="https://leetcode.com/u/uInn4XILyH/" target="_blank" rel="noreferrer">
           <SiLeetcode size={28} />
         </a>
       </motion.div>
@@ -94,11 +117,7 @@ export default function IntroPage() {
         className="cards-container"
       >
         {cards.map((card, idx) => (
-          <motion.div
-            key={idx}
-            whileHover={{ scale: 1.05, y: -5 }}
-            className="card"
-          >
+          <motion.div key={idx} whileHover={{ scale: 1.05, y: -5 }} className="card">
             <h3>{card.title}</h3>
             <p>{card.desc}</p>
           </motion.div>
@@ -112,10 +131,7 @@ export default function IntroPage() {
         transition={{ delay: 1.2 }}
         className="cta-buttons"
       >
-        <a
-          href="mailto:ranganathsrinivasa95@gmail.com"
-          className="cta-button"
-        >
+        <a href="mailto:ranganathsrinivasa95@gmail.com" className="cta-button">
           Contact Me
         </a>
 
