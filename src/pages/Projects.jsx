@@ -8,8 +8,8 @@ export default function Projects() {
             title: "Book Nest",
             period: "March 2025 – Sept 2025",
             desc: "Engineered a secure, full-featured online bookstore with Node.js and MongoDB. Key achievements include implementing Google OAuth for quick sign-in, developing dynamic discovery and shopping cart features, and integrating Razorpay for payment processing.",
-            github: "https://github.com/Maverick400x/BookNest",
-            live: "https://book-nest-wgrp.onrender.com",
+            github: "https://github.com/Maverick400x/fictional-dollop_Book_Nest.git",
+            live: "https://fictional-dollop-book-qow7.vercel.app/",
             ongoing: false,
             tags: ["Fullstack", "MongoDB", "Node.js", "E-commerce","Razorpay","Google Oauth"],
             phases: [
