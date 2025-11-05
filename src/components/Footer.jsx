@@ -12,7 +12,7 @@ export default function Footer() {
         </p>
 
         <p className="footer-tagline">
-          Frontend & Full Stack Developer | Always learning & building
+          Full Stack Developer | Always learning & building
         </p>
       </div>
     </footer>
