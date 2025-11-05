@@ -24,7 +24,7 @@ export default function IntroPage() {
   const cards = [
     {
       title: "Experience",
-      desc: "Frontend Developer – Built BookNest, a full-featured online bookstore with user authentication, REST APIs, and MongoDB backend.",
+      desc: "Full Stack Developer – Built BookNest, a full-featured online bookstore with user authentication, REST APIs, and MongoDB backend.",
     },
     {
       title: "Projects",
