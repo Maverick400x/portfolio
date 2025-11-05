@@ -6,12 +6,12 @@ import "../styles/experience.css";
 export default function Experience() {
   const experiences = [
     {
-      title: "Frontend Developer – Freelance",
+      title: "Full Stack Developer – Freelance",
       period: "March 2025 – August 2025",
-      desc: "Developed BookNest, a full-featured online bookstore with user authentication, REST APIs, and MongoDB backend. Deployed on Render with GitHub CI/CD."
+      desc: "Developed BookNest, a full-featured online bookstore with user authentication, REST APIs, and MongoDB backend. Deployed on Vercel with GitHub CI/CD."
     },
     {
-      title: "Full Stack Web Development Training",
+      title: "Coding Ninjas - Full Stack Development Training",
       period: "Sep 2024 – June 2025",
       desc: "Completed comprehensive training at Coding Ninjas covering Frontend, Backend, Databases, and Generative AI."
     }
