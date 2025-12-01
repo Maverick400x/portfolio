@@ -11,13 +11,13 @@ export default function IntroPage() {
       icon: <FaGraduationCap size={28} />,
       degree: "M.Tech in Computer Networks and Information Security",
       college: "VNR Vignana Jyothi Institute of Engineering & Technology, Hyderabad",
-      duration: "Nov 2025 – Present",
+      duration: "November 2025 – Present",
     },
     {
       icon: <FaGraduationCap size={28} />,
       degree: "B.Tech in Computer Science Engineering",
       college: "Institute of Aeronautical Engineering, Hyderabad",
-      duration: "2020 – 2024",
+      duration: "November 2020 – June 2024",
     },
   ];
 
